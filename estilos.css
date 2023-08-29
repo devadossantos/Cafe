@@ -10,9 +10,35 @@
 
 body {
   font-family: var(--font-principal);
-  height: 4000px;
+  overflow-x: hidden;
 
 }
+
+[data-bs-theme="dark"]{
+  color:white;
+  .nav-link, .card-body,.btn-primary, offcanvas, .accordion{
+    --bs-nav-link-color:white;
+    --bs-card-color:white;
+    --bs-btn-hover-bg: var(--marrom-escuro);
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-border-color: var(--marrom-escuro);
+    --bs-btn-active-border-color: var(--marrom-claro);
+    --bs-body-color: white;
+    --bs-offcanvas-color: white;
+  }
+  .botao-padrao{
+    color: black;
+    background-color: var(--marrom-claro);
+    border-color: var(--marrom-claro);
+  }
+  .botao-padrao:hover{
+    color: black;
+    background-color: var(--marrom-escuro);
+    border-color: var(--marrom-escuro);
+  }
+
+}
+
 
 input[type=checkbox]{
   border: 2px solid var(--marrom-claro);
@@ -25,6 +51,7 @@ input[type="checkbox"]:focus {
   box-shadow: none;
   outline: none;
 }
+
 .banners{
   width: 100vw;
   height: 100vh;
@@ -53,4 +80,7 @@ input[type="checkbox"]:focus {
 }
 .botao-padrao{
   background-color: var(--marrom-claro);
+}
+.botao-padrao:hover{
+  background-color: var(--marrom-escuro);
 }
